@@ -5,7 +5,8 @@ using System.Web;
 
 namespace BusinessSolutions.Models
 {
-    public class businessSolutionsModel
+    public class ProductModel
     {
+        public List<ItemModel> Items { get; set; }
     }
 }

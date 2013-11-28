@@ -8,7 +8,7 @@
 <body>
     <div id="container">
         <div id="header">
-            <h1><a href="index.cshtml">Business.Solutions</h1>
+            <h1><a href="index.cshtml">Business.Solutions</a></h1>
 
             <h3>Websites to meet your needs</h3>
         </div>
@@ -23,10 +23,6 @@
                     <li.a><a href="createAccount.cshtml">Create an Account</a></li.a>
                 </h4>
                 </ul>
-            <form action="search_form.asp">
-                Search: <input type="text" name="query">
-                <input type="submit" value="Submit">
-            </form>
         </div>
 
         <div id="menu">
@@ -36,7 +32,7 @@
                     <br>
                     <li.b><a href="team.cshtml">Our Team</a></li.b>
                     <br>
-                    <li.b><a href="products.cshtml">Products</a></li.b>
+                    <li.b><a href="/Home/products">Products</a></li.b>
                     <br>
                     <li.b><a href="reviews.cshtml">Reviews</a></li.b>
                     <br>
@@ -47,7 +43,7 @@
         </div>
 
         <div id="centerDoc">
-            @RenderBody()s
+            @RenderBody()
         </div>
     </div>
 </body>

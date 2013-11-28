@@ -1,0 +1,18 @@
+﻿@using BusinessSolutions.Models
+@model ProductModel
+@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+@foreach(ItemModel a in Model.Items)
+{
+    <h3>@a.Title</h3>
+    <div>
+        <p>
+            @a.ItemText.Substring(0, 20)
+        </p>
+        <div><a href="/home/items?itemid=@a.Id">Full description</a></div>
+    </div>
+    <br/>
+}
+    
