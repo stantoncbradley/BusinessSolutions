@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Business Solutions</title>
+    <link href="../assets/CoverPageCSS.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1><a href="index.cshtml">Business.Solutions</h1>
+
+            <h3>Websites to meet your needs</h3>
+        </div>
+
+        <div id="horizontalMenu">
+                <ul>
+                <h4>
+                    <li.a><a href="about.cshtml"></a>About Us</li.a>
+                    <li.a><a href="portfolio.cshtml"></a>Portfolio</li.a>
+                    <li.a><a href="contact.cshtml">Contact</a></li.a>
+                    <li.a><a href="signIn.cshtml">Sign In</a></li.a>
+                    <li.a><a href="createAccount.cshtml">Create an Account</a></li.a>
+                </h4>
+                </ul>
+            <form action="search_form.asp">
+                Search: <input type="text" name="query">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div id="menu">
+            <h5>
+                <ul>
+                    <li.b><a href="mission.cshtml">Our Mission</a></li.b>
+                    <br>
+                    <li.b><a href="team.cshtml">Our Team</a></li.b>
+                    <br>
+                    <li.b><a href="products.cshtml">Products</a></li.b>
+                    <br>
+                    <li.b><a href="reviews.cshtml">Reviews</a></li.b>
+                    <br>
+                    <li.b><a href="careers.cshtml">Careers</a></li.b>
+                    <br>
+                </ul>
+            </h5>
+        </div>
+
+        <div id="centerDoc">
+            @RenderBody()s
+        </div>
+    </div>
+</body>
+</html>
