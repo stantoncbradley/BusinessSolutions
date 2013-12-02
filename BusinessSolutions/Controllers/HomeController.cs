@@ -14,6 +14,11 @@ namespace BusinessSolutions.Controllers
             return View();
         }
 
+        public ActionResult aboutUs()
+        {
+            return View();
+        }
+
         public ActionResult Items(int itemId)
         {
             ItemModel model = new ItemModel();
