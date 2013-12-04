@@ -11,7 +11,7 @@
         <p>
             @a.ItemText.Substring(0, 20)
         </p>
-        <div><a href="/home/items?itemid=@a.Id">Full description</a></div>
+        <div><a href="@Url.Action("item", new { itemId = item.Id})">Full description</a></div>
     </div>
     <br/>
 }
