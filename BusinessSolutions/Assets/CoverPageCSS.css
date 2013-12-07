@@ -17,14 +17,32 @@ ul {
 	padding: 0;
 }
 
-li.a {
+nav {
+    background-color: #444444;
+    width: 800px;
+    height: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+nav li {
 	list-style-type: none;
     display: inline;
 	margin: 0px;
 	padding: 0;
 }
 
-li.b {
+#menu {
+    position: absolute;
+	width: 100px;
+	height: 600px;
+    background-color: #FFFFFF;
+	margin-top: 0px;
+    margin-bottom: 0px;
+	border-right: 1px solid #CCCCCC;
+	font-weight: normal;
+}
+#menu li {
     list-style-type: none;
     display: block;
     margin: 0;
@@ -68,12 +86,12 @@ h5 {
 /*************** Pseudo classes *********************/
 
 a:link {
-    color: #222222;
+    color: #3333AA;
     text-decoration: none
 }
 
 a:visited {
-	color: #111166;
+	color: #ff6a00;
 	text-decoration: none;
 }
 
@@ -91,17 +109,17 @@ ul a:hover {
     text-decoration: underline;
 }
 
-li.a a:link {
+nav a:link {
     color: #FFFFFF;
     text-decoration: none;
 }
 
-li.a a:visited {
+nav a:visited {
 	color: #00FF00;
 	text-decoration: none;
 }
 
-li.a a:hover {
+nav a:hover {
 	color: #FF5511;
 	text-decoration: none;
 }
@@ -118,25 +136,6 @@ li.a a:hover {
     margin-bottom: 0px;
     width: 800px;
     height: 100px;
-}
-
-#horizontalMenu {
-    background-color: #444444;
-    width: 800px;
-    height: 40px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-	
-#menu {
-    position: absolute;
-	width: 100px;
-	height: 600px;
-    background-color: #FFFFFF;
-	margin-top: 0px;
-    margin-bottom: 0px;
-	border-right: 1px solid #CCCCCC;
-	font-weight: normal;
 }
 
 #centerDoc {
