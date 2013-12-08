@@ -1,0 +1,16 @@
+﻿@using BusinessSolutions.Models
+@model SignInModel
+@{
+    ViewBag.Title = "Accounts";
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<div>
+    @using(Html.BeginForm("SignIn", "Account"))
+    {
+        @Html.ValidationSummary();
+        <span>Username</span> @Html.TextBoxFor(m => m.UserName);<br/>
+        <span>Password</span> @Html.PasswordFor(m => m.Password);<br/>
+        <input type="submit" value="Submit"/>
+    }
+</div>

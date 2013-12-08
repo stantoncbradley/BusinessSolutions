@@ -2,13 +2,13 @@
 <html>
 <head>
     <title>Business Solutions</title>
-    <link href="../assets/CoverPageCSS.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/CoverPageCSS.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <div id="container">
         <div id="header">
-            <h1><a href="index.cshtml">Business.Solutions</a></h1>
+            <h1><a href="@Url.Action("Index", "Home")">Business.Solutions</a></h1>
 
             <h3>Custom data solutions to meet your needs</h3>
             
@@ -19,8 +19,7 @@
                     <li><a href="about.cshtml">About Us</a></li>
                     <li><a href="portfolio.cshtml">Portfolio</a></li>
                     <li><a href="contact.cshtml">Contact</a></li>
-                    <li><a href="signIn.cshtml">Sign In</a></li>
-                    <li><a href="createAccount.cshtml">Create an Account</a></li>
+                    <li><a href="@Url.Action("Index", "Account")">Accounts</a></li>
                 </ul>
         </nav>
 
@@ -29,7 +28,7 @@
                 <ul>
                     <li><a href="mission.cshtml">Our Mission</a></li>
                     <li><a href="team.cshtml">Our Team</a></li>
-                    <li><a href="/Home/products">Products</a></li>
+                    <li><a href="@Url.Action("Products", "Home")">Products</a></li>
                     <li><a href="reviews.cshtml">Reviews</a></li>
                     <li><a href="careers.cshtml">Careers</a></li>
                 </ul>

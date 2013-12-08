@@ -4,14 +4,14 @@
     Layout = "../Shared/_Layout.cshtml";
 }
 
-@foreach(ItemModel a in Model.Items)
+@foreach(ItemModel thisItem in Model.Items)
 {
-    <h3>@a.Title</h3>
+    <h3>@thisItem.Title</h3>
     <div>
         <p>
-            @a.ItemText.Substring(0, 20)
+            @thisItem.ItemText.Substring(0, 20)
         </p>
-        <div><a href="/home/items?itemid=@a.Id">Full description</a></div>
+        <div><a href="@Url.Action("items", new {itemId = thisItem.Id})">Full description</a></div>
     <br/>
     </div>
 }

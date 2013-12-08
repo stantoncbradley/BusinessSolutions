@@ -1,41 +1,18 @@
-﻿@model BusinessSolutions.Models.RegisterViewModel
+﻿@using BusinessSolutions.Models
+@model RegisterModel
 @{
     ViewBag.Title = "Register";
+    Layout = "../Shared/_Layout.cshtml";
 }
 
-<h2>@ViewBag.Title.</h2>
-
-@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+<h3>Register</h3>
+@using(Html.BeginForm("Register", "Account"))
 {
-    @Html.AntiForgeryToken()
-    <h4>Create a new account.</h4>
-    <hr />
     @Html.ValidationSummary()
-    <div class="form-group">
-        @Html.LabelFor(m => m.UserName, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" class="btn btn-default" value="Register" />
-        </div>
-    </div>
-}
-
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
+    <span>First Name:</span> @Html.TextBoxFor(m => m.FirstName) @Html.ValidationMessageFor(m => m.FirstName) <br/>
+    <span>Last name:</span> @Html.TextBoxFor(m => m.LastName) @Html.ValidationMessageFor(m => m.LastName) <br/>
+    <span>Email:</span> @Html.TextBoxFor(m => m.Email) @Html.ValidationMessageFor(m => m.Email)<br/>
+    <span>Phone:</span> @Html.TextBoxFor(m => m.Phone) @Html.ValidationMessageFor(m => m.Phone)<br/>
+    <span>Password:</span> @Html.PasswordFor(m => m.Password) @Html.ValidationMessageFor(m => m.Password)<br/>
+    <input type="submit" value="Register!"/>
 }
