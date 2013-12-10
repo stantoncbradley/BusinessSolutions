@@ -7,7 +7,7 @@ using BusinessSolutions.Models;
 
 namespace BusinessSolutions.Controllers
 {
-    public class AccountController : Controller
+    public class MemberController : Controller
     {
         //
         //  GET: /Account/
@@ -31,8 +31,10 @@ namespace BusinessSolutions.Controllers
                 ModelState.AddModelError("", "Your username or password is invalid");
                 return View(model);
             }
-            else // is a valid user
-                return RedirectToAction("Index", "Home");
+            else if (model.UserName == "Admin") // is admin
+                return RedirectToAction("Index", "Admin");
+            else
+                return RedirectToAction("Index", "Member");
         }
 
         [HttpGet]
@@ -45,7 +47,7 @@ namespace BusinessSolutions.Controllers
         public ActionResult Register(RegisterModel model)
         {
             if (ModelState.IsValid)
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Member");
 
             return View(model);
         }
@@ -53,7 +55,7 @@ namespace BusinessSolutions.Controllers
         private bool IsValidUser(SignInModel model)
         {
             // DATABASE WOULD DO THIS NORMALLY
-            if (model.UserName == "Cole" && model.Password == "password")
+            if ((model.UserName == "Cole" || model.UserName == "Admin") && model.Password == "password")
                 return true;
             return false;
         }

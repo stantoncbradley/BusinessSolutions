@@ -86,7 +86,7 @@ h5 {
 /*************** Pseudo classes *********************/
 
 a:link {
-    color: #3333AA;
+    color: #333faa;
     text-decoration: none
 }
 
@@ -115,7 +115,7 @@ nav a:link {
 }
 
 nav a:visited {
-	color: #00FF00;
+	color: #EEEEEE;
 	text-decoration: none;
 }
 

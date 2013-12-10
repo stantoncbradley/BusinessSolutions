@@ -1,12 +1,12 @@
 ﻿@using BusinessSolutions.Models
 @model SignInModel
 @{
-    ViewBag.Title = "Accounts";
+    ViewBag.Title = "Member";
     Layout = "../Shared/_Layout.cshtml";
 }
 
 <div>
-    @using(Html.BeginForm("SignIn", "Account"))
+    @using(Html.BeginForm("SignIn", "Member"))
     {
         @Html.ValidationSummary();
         <span>Username</span> @Html.TextBoxFor(m => m.UserName);<br/>

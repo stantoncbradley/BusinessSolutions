@@ -6,7 +6,7 @@
 }
 
 <h3>Register</h3>
-@using(Html.BeginForm("Register", "Account"))
+@using(Html.BeginForm("Register", "Member"))
 {
     @Html.ValidationSummary()
     <span>First Name:</span> @Html.TextBoxFor(m => m.FirstName) @Html.ValidationMessageFor(m => m.FirstName) <br/>

@@ -15,8 +15,8 @@ namespace BusinessSolutions
 
             routes.MapRoute(
                 name: "AccountRoute",
-                url: "members/account/{action}",
-                defaults: new { controller = "Account", action = "Index" }
+                url: "{controller}/{action}",
+                defaults: new { controller = "Member", action = "Index" }
             );
 
             routes.MapRoute(
@@ -26,8 +26,14 @@ namespace BusinessSolutions
             );
 
             routes.MapRoute(
+                name: "Admin",
+                url: "{controller}/{action}",
+                defaults: new { controller = "Admin", action = "Index" }
+            );
+
+            routes.MapRoute(
                 name: "Default",
-                url: "{action}/",
+                url: "{controller}/{action}",
                 defaults: new { controller = "Home", action = "Index" }
             );
         }

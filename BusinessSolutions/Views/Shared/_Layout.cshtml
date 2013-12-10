@@ -8,7 +8,7 @@
 <body>
     <div id="container">
         <div id="header">
-            <h1><a href="@Url.Action("Index", "Home")">Business.Solutions</a></h1>
+            <h1><a href="@Url.Action("Index", "Home")">Business Solutions</a></h1>
 
             <h3>Custom data solutions to meet your needs</h3>
             
@@ -16,10 +16,12 @@
 
         <nav>
                 <ul>
-                    <li><a href="about.cshtml">About Us</a></li>
+                    <li><a href="@Url.Action("AboutUs", "Home")">About Us</a></li>
                     <li><a href="portfolio.cshtml">Portfolio</a></li>
                     <li><a href="contact.cshtml">Contact</a></li>
-                    <li><a href="@Url.Action("Index", "Account")">Accounts</a></li>
+                    <li><a href="@Url.Action("SignIn", "Member")">Sign In</a></li>
+                    <li><a href="@Url.Action("Register", "Member")">Register</a></li>
+  
                 </ul>
         </nav>
 
