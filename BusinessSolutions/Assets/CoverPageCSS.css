@@ -18,7 +18,7 @@ ul {
 }
 
 nav {
-    background-color: #444444;
+    background-color: #666666;
     width: 800px;
     height: 20px;
     margin-top: 0px;
@@ -51,7 +51,7 @@ nav li {
 
 h1 {
 	font-family: Impact, Charcoal, sans-serif;
-	font-size: 60px;
+	font-size: 70px;
 	color: #FF5511;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -91,7 +91,7 @@ a:link {
 }
 
 a:visited {
-	color: #ff6a00;
+	color: #333faa;
 	text-decoration: none;
 }
 
@@ -135,7 +135,7 @@ nav a:hover {
     margin-top: 0px;
     margin-bottom: 0px;
     width: 800px;
-    height: 100px;
+    height: 103px;
 }
 
 #centerDoc {

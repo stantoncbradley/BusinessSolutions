@@ -16,9 +16,7 @@
 
         <nav>
                 <ul>
-                    <li><a href="@Url.Action("AboutUs", "Home")">About Us</a></li>
-                    <li><a href="portfolio.cshtml">Portfolio</a></li>
-                    <li><a href="contact.cshtml">Contact</a></li>
+                    <li><a href="@Url.Action("Index", "Home")">Home</a></li>
                     <li><a href="@Url.Action("SignIn", "Member")">Sign In</a></li>
                     <li><a href="@Url.Action("Register", "Member")">Register</a></li>
   
@@ -28,11 +26,10 @@
         <div id="menu">
 
                 <ul>
-                    <li><a href="mission.cshtml">Our Mission</a></li>
-                    <li><a href="team.cshtml">Our Team</a></li>
+                    <li><a href="@Url.Action("AboutUs", "Home")">About Us</a></li>
                     <li><a href="@Url.Action("Products", "Home")">Products</a></li>
-                    <li><a href="reviews.cshtml">Reviews</a></li>
-                    <li><a href="careers.cshtml">Careers</a></li>
+                    <li><a href="@Url.Action("Index", "Forum")">Forum</a></li>
+                    <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
                 </ul>
         </div>
 

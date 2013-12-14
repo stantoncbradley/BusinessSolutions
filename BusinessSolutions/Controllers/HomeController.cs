@@ -35,6 +35,11 @@ namespace BusinessSolutions.Controllers
             return View();
         }
 
+        public ActionResult Contact()
+        {
+            return View();
+        }
+
         private List<ItemModel> GetAllItems()
         {
             List<ItemModel> items = new List<ItemModel>();
