@@ -1,0 +1,12 @@
+﻿@using BusinessSolutions.Models
+@model ThreadModel
+
+@{
+    ViewBag.Title = "Threads";
+    Layout = "../Shared/_Layout.cshtml";
+}
+<div>
+    <h3>@Model.Title</h3>
+</div>
+@Html.Partial("CommentSectionView", Model.CommentSection)
+

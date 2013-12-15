@@ -1,7 +1,13 @@
-﻿
+﻿@using BusinessSolutions.Models
+@model IndexModel
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Forum</h2>
 
+@foreach (ThreadModel thisThread in Model.Threads)
+{
+        <div><a href="@Url.Action("Threads", new {threadId = thisThread.Id})">@thisThread.Title</a></div>
+        <br />
+}
